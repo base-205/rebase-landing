@@ -3,13 +3,17 @@
 
 <head>
 
+    <title>Birmingham, AL Developer Conference - Rebase 2018</title>
+    <meta name="description" content="re:BASE is a web technology conference in Birmingham, Alabama on Sept. 20-21 featuring tracks for Frontend, Backend, DevOps and more.">
+
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Birmingham, AL Developer Conference - Rebase 2018</title>
+    <meta property="og:url" content="http://rebaseconf.io" />
+    <meta property="og:title" content="Web Technology Conference in Birmingham, Alabama" />
+    <meta property="og:description" content="re:BASE is a web technology conference in Birmingham, Alabama on Sept. 20-21 featuring tracks for Frontend, Backend, DevOps and more." />
+    <meta property="og:image" content="./img/share.jpg" />
 
     <link href="https://fonts.googleapis.com/css?family=Oswald:700|PT+Mono" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.min.css">
@@ -33,10 +37,7 @@
 <body>
 
 
-    <div id="particles-js"></div>
-
-
-    <main>
+    <main itemscope itemtype="http://schema.org/Event">
 
 
         <header>
@@ -45,12 +46,17 @@
 
             <hgroup>
 
-                <h1>
-                    <span class="visuallyhidden">Rebase </span>Web Technology Conference</h1>
+                <h1 itemprop="">
+                    <span class="visuallyhidden" itemprop="name">Rebase </span>Web Technology Conference
+                </h1>
 
                 <h2>
                     <span class="date">Sept. 20 - 21</span>
-                    <span class="location">Birmingham, Alabama</span>
+                    <div class="visuallyhidden">
+                        <span itemprop="startDate">2018-09-20</span>
+                        <span itemprop="endDate">2018-09-21</span>
+                    </div>
+                    <span class="location" itemprop="location"><span class="visuallyhidden">Birmingham Jefferson Civic Center</span>Birmingham, Alabama</span>
                 </h2>
 
             </hgroup>
@@ -94,29 +100,6 @@
         </section>
 
 
-        <section id="about-base" class="modal">
-
-            <div class="modal__body">
-
-                <a onclick="toggleModal()" data-modal="about-base" class="modal__exit">&times;</a>
-
-                <h3 class="modal__title">About BASE</h3>
-
-                <p class="modal__content">
-                    <abbr title="Birmingham Alabama Software Enthusiasts">BASE</abbr> (Birmingham Alabama Software Enthusiasts) is the foundational community for individuals interested
-                    in learning about and developing software in the Birmingham, Alabama area. We are made up of folks interested
-                    in a wide variety of technologies from Ruby, JavaScript, and Java to tools like Docker, AWS, and Terraform.
-                    BASE welcomes anyone who is interested in the field of software and technology, regardless of gender,
-                    race, creed, ethnicity, or background. Our goal is to bring together technology enthusiasts of all types
-                    to build a stronger tech-focused community in our city.
-                </p>
-
-            </div>
-
-
-        </section>
-
-
         <footer>
 
             <ul class="footer-links">
@@ -124,10 +107,10 @@
                     <a href="mailto:david@base205.com">Contact Us</a>
                 </li>
                 <li>
-                    <a onclick="toggleModal()" data-modal="about-base">About BASE</a>
+                    <a onclick="toggleModal()" data-modal="about-base">About BASE<span class="visuallyhidden" itemprop="organizer"> Birmingham Alabama Software Enthusiasts</span></a>
                 </li>
                 <li>
-                    <a href="https://www.meetup.com/base205/" target="_blank" alt="BASE (Birmingham Alabama Software Entusiasts) on Meetup">
+                    <a href="https://www.meetup.com/base205/" target="_blank" alt="BASE (Birmingham Alabama Software Enthusiasts) on Meetup">
                         <img id="meetup-logo" src="./img/meetup-logo.svg" alt="Meetup Logo">
                         <span class="visuallyhidden">Check us out on Meetup</span>
                     </a>
@@ -138,6 +121,28 @@
 
 
     </main>
+
+    <section id="about-base" class="modal">
+    
+        <div class="modal__body">
+    
+            <a onclick="toggleModal()" data-modal="about-base" class="modal__exit">&times;</a>
+    
+            <h3 class="modal__title">About BASE</h3>
+    
+            <p class="modal__content">
+                <abbr title="Birmingham Alabama Software Enthusiasts">BASE</abbr> (Birmingham Alabama Software Enthusiasts) is the foundational community for individuals interested
+                in learning about and developing software in the Birmingham, Alabama area. We are made up of folks interested
+                in a wide variety of technologies from Ruby, JavaScript, and Java to tools like Docker, AWS, and Terraform. BASE
+                welcomes anyone who is interested in the field of software and technology, regardless of gender, race, creed,
+                ethnicity, or background. Our goal is to bring together technology enthusiasts of all types to build a stronger
+                tech-focused community in our city.
+            </p>
+    
+        </div>
+    
+    
+    </section>
 
 
     <script src="./js/main.min.js"></script>
