@@ -18,6 +18,36 @@
     <meta property="og:image:width" content="1920" />
     <meta property="og:image:height" content="1080" />
 
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Event",
+      "url": "http://rebaseconf.io",
+      "name": "re:BASE Web Technology Conference",
+      "description": "re:BASE is a web technology conference in Birmingham, Alabama on Sept. 20-21 featuring tracks for Frontend, Backend, DevOps and more.",
+      "image": "http://rebaseconf.io/img/share.png",
+      "startDate": 2018-09-20,
+      "endDate": 2018-09-21,
+      "location": {
+          "@type": "place",
+          "name": "Birmingham Jefferson Civic Center",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Birmingham",
+            "addressRegion": "AL",
+            "postalCode": "35203",
+            "streetAddress": "2100 Richard Arrington Jr Blvd N"
+        },
+        "url": "https://www.bjcc.org/"
+      },
+      "organizer": {
+          "@type": "organization",
+          "name": "Birmingham Alabama Software Enthusiasts",
+          "url": "http://base205.com"
+      }
+    }
+    </script>
+
     <link href="https://fonts.googleapis.com/css?family=Oswald:700|PT+Mono" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.min.css">
 
@@ -40,33 +70,25 @@
 <body>
 
 
-    <main itemscope itemtype="http://schema.org/Event">
+    <main>
 
 
         <header>
 
             <img id="rebase-logo" src="./img/logo.svg" alt="ReBase Developers Conference">
-            <img id="rebase-logo" src="./img/share.png" alt="ReBase Developers Conference" class="visuallyhidden" itemprop="image">
 
             <hgroup>
 
-                <h1 itemprop="">
-                    <span class="visuallyhidden" itemprop="name">Rebase </span>Web Technology Conference
+                <h1>
+                    <span class="visuallyhidden">Rebase </span>Web Technology Conference
                 </h1>
 
                 <h2>
                     <span class="date">Sept. 20 - 21</span>
-                    <div class="visuallyhidden">
-                        <span itemprop="startDate">2018-09-20</span>
-                        <span itemprop="endDate">2018-09-21</span>
-                    </div>
-                    <span class="location" itemprop="location"><span class="visuallyhidden">Birmingham Jefferson Civic Center in</span>Birmingham, Alabama</span>
-                    <span class="visuallyhidden" itemprop="address">2100 Richard Arrington Jr Blvd N, Birmingham, AL 35203</span>
+                    <span class="location"><span class="visuallyhidden">Birmingham Jefferson Civic Center in</span>Birmingham, Alabama</span>
                 </h2>
 
             </hgroup>
-
-            <p class="visuallyhidden" itemprop="description">re:BASE is a web technology conference in Birmingham, Alabama on Sept. 20-21 featuring tracks for Frontend, Backend, DevOps and more.</p>
 
         </header>
 
@@ -114,7 +136,7 @@
                     <a href="mailto:david@base205.com">Contact Us</a>
                 </li>
                 <li>
-                    <a onclick="toggleModal()" data-modal="about-base">About BASE<span class="visuallyhidden" itemprop="organizer"> Birmingham Alabama Software Enthusiasts</span></a>
+                    <a onclick="toggleModal()" data-modal="about-base">About BASE</a>
                 </li>
                 <li>
                     <a href="https://www.meetup.com/base205/" target="_blank" alt="BASE (Birmingham Alabama Software Enthusiasts) on Meetup">
